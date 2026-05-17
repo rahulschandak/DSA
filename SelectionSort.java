@@ -3,7 +3,7 @@
 
 import java.util.Arrays;
 
-class Main {
+class SelectionSort {
     
     private static int[] selectionSort(int[] arr) {
         int n = arr.length;
