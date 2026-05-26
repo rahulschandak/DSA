@@ -1,0 +1,19 @@
+package Recursion;
+
+public class FibonacciRecursion {
+
+    private static int fib(int n) {
+        if (n == 1 || n == 0) {
+            return n;
+        }
+
+        return fib(n - 1) + fib(n - 2);
+    }
+
+    public static void main(String[] args) {
+        int n = 10;
+        System.out.print(fib(n));
+    }
+}
+
+// 0 1 1 2 3 5 8 13 21 34 55
