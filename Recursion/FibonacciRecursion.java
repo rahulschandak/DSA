@@ -1,3 +1,8 @@
+// There are better ways to calculate Fibonacci numbers, but this is the most basic way to do it using recursion. 
+// The time complexity of this approach is O(2^n) because it does a lot of redundant calculations. 
+// For example, fib(5) will calculate fib(4), fib(3), fib(2), fib(1), and fib(0) multiple times.
+// Better way is dynamic programming or memoization, which can reduce the time complexity to O(n) by storing previously calculated results.
+
 package Recursion;
 
 public class FibonacciRecursion {
@@ -15,5 +20,3 @@ public class FibonacciRecursion {
         System.out.print(fib(n));
     }
 }
-
-// 0 1 1 2 3 5 8 13 21 34 55
