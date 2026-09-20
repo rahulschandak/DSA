@@ -18,16 +18,16 @@
     Note that the head of the linked list gets changed.
 */
 
-class ListNode{
+class ListNode1 {
     public int data;
-    public ListNode next;
-    ListNode() { data = 0; next = null; }
-    ListNode(int x) { data = x; next = null; }
-    ListNode(int x, ListNode next) { data = x; this.next = next; }
+    public ListNode1 next;
+    ListNode1() { data = 0; next = null; }
+    ListNode1(int x) { data = x; next = null; }
+    ListNode1(int x, ListNode1 next) { data = x; this.next = next; }
 }
 
 public class DeletionAtHead {
-    public ListNode deleteAtHead(ListNode head) {
+    public ListNode1 deleteAtHead(ListNode1 head) {
         if (head == null) {
             return null;
         }
@@ -36,11 +36,11 @@ public class DeletionAtHead {
 
     public static void main(String[] args) {
         DeletionAtHead solution = new DeletionAtHead();
-        ListNode head = new ListNode(1, new ListNode(2, new ListNode(3)));
-        ListNode modifiedHead = solution.deleteAtHead(head);
+        ListNode1 head = new ListNode1(1, new ListNode1(2, new ListNode1(3)));
+        ListNode1 modifiedHead = solution.deleteAtHead(head);
 
         // Print the modified linked list
-        ListNode current = modifiedHead;
+        ListNode1 current = modifiedHead;
         while (current != null) {
             System.out.print(current.data + " ");
             current = current.next;
